@@ -25,52 +25,7 @@ return (
 </Card>
 </div>
 
-//   <Card className="card"
-//   image='https://react.semantic-ui.com/images/avatar/large/elliot.jpg'
-//   header='Elliot Baker'
-//   meta='Friend'
-//   description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-//   extra={<Icon name='phone' />}
-// />
 
-//   <CardColumns>
-//   <Card className="card">
-//     <Card.Img className="card-image" variant="top" src={props.picture} />
-//     <Card.Body>
-//       <Card.Title>Card title</Card.Title>
-//       <Card.Text>
-//         Card Text This card has supporting text below as a natural lead-in
-//         to additional content.{" "}
-//       </Card.Text>
-//     </Card.Body>
-//     <Card.Footer>
-//       <small className="text-muted">Last updated 10 mins ago</small>
-//     </Card.Footer>
-//   </Card>
-// </CardColumns>
-
-
-
-
-    // <div className="card">
-    //   <div className="card-img">
-    //   <img src={props.picture} className="card__img" alt={props.name} />
-    //   </div>
-    //   <div className="card__body">
-    //     <div className="title-card">
-    //       <h5 className="card__title">{props.name}</h5>
-    //     </div>
-    //     <div className="card-adress">
-    //     <p className="card__description">{props.location}</p>
-    //     </div>
-    //     <div className="email-card">
-    //     <h6 className="card__email">{props.email}</h6>
-    //     </div>
-    //     <div className="card-btn">
-    //     <button className="card__btn">Contact: {props.phone}</button>
-    //     </div>
-    //   </div>
-    // </div>
   )
 }
 
