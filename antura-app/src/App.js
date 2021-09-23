@@ -56,7 +56,6 @@ class App extends React.Component {
   render() {
     var {loading, error} = this.state
 
-    
     const userComponent = this.state.user.map(user =>
       <User
       key = {user.login.username}
