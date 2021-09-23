@@ -1,0 +1,46 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #131313 !important;
+}
+
+.wrapper {
+  margin: 2rem;
+  display: flex;
+  gap: 1rem;
+  /* grid-template-columns: 1fr; */
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+
+}
+.container-card{
+  padding-top: 15px;
+  max-width: 265px;
+  max-height: 380px; 
+  flex:1;
+  justify-content: space-evenly;
+
+}
+.card{
+  text-align: center;
+  justify-content: space-evenly;
+}
+.image {
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.email-description{
+  white-space: pre-wrap;
+}
+.description{
+  height: 5em;
+  white-space: pre-wrap;
+  font-size: 10pt;
+}
+.phone {
+  font-weight: bold;
+  color: #202020;
+}
+
