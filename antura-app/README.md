@@ -1,6 +1,7 @@
 # Fetch Random User
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fetch random users from https://randomuser.me/api/ and displays them with cards
+
 
 ## Available Scripts
 
