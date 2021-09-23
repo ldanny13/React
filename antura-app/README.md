@@ -1,6 +1,6 @@
 # Fetch Random User
 
-Fetch random users from https://randomuser.me/api/ and displays in in cards
+Fetch random users from https://randomuser.me/api/ and displays them with cards
 
 
 ## Available Scripts
