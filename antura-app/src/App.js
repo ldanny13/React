@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
 import User from './components/Users';
-import Loader from "react-loader-spinner";
+import Error from './components/Error'
+import Loading from './components/Loading';
+import Header from './components/Header';
 
 class App extends React.Component {
 
@@ -12,6 +14,8 @@ class App extends React.Component {
       error: null,
       user: []
     } 
+
+    this.fetchUsers= this.fetchUsers.bind(this);
   }
   // componentDidMount(){
   //   this.setState({loading: true})
@@ -45,13 +49,14 @@ class App extends React.Component {
     .catch((err) =>
      this.setState({
       loading: true,
-      error: err.message,
+      error: err.message
     }))
   }
 
   render() {
     var {loading, error} = this.state
 
+    
     const userComponent = this.state.user.map(user =>
       <User
       key = {user.login.username}
@@ -65,32 +70,19 @@ class App extends React.Component {
     if(error) 
     {
       return (
-      <div className="error-div">
-        <h2>Error in loading..</h2>
-        <p>{this.state.error}</p>
-      </div>
+      <Error/>
       )
     }
-    else if(loading) {
+    else if(loading){
       return (
-        <div className="loading-div">
-        <Loader
-        type="TailSpin"
-        color="#00ff00"
-        height={100}
-        width={100}
-        timeout={3000} //3 secs
-        />
-     </div> 
+      <Loading/>
       )
     }
   return(
   <div className="App-container">
-    <div className="header-title">
-      <h1>Get Random Users</h1>
-    </div> 
+   <Header/>
     <div className="fetch">  
-      <button className="fetch-button" onClick={() => this.fetchUsers()}> Get Users </button>
+      <button className="fetch-button" onClick={this.fetchUsers}> Get Users</button>
     </div>
         <div className="wrapper">   
           {userComponent}
