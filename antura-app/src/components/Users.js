@@ -18,7 +18,7 @@ return (
     </Card.Description>
   </Card.Content>
   <Card.Content extra>
-    <a className="phone">
+    <a href="/#" className="phone">
     {props.phone} ~ <Icon name='phone' />  
     </a>
   </Card.Content>
