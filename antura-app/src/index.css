@@ -15,7 +15,7 @@ body {
 .container-card{
   padding-top: 15px;
   max-width: 265px;
-  max-height: 380px; 
+  max-height: 360px; 
   flex:1;
   justify-content: space-evenly;
 

@@ -66,6 +66,9 @@ class App extends React.Component {
       email = {user.email}
       />
     )
+
+    // const viewCards = loading ? <Loading/> : userComponent
+
     if(error) 
     {
       return (
@@ -78,12 +81,13 @@ class App extends React.Component {
       )
     }
   return(
-  <div className="App-container">
+  <div className="App">
    <Header/>
     <div className="fetch">  
       <button className="fetch-button" onClick={this.fetchUsers}> Get Users</button>
     </div>
         <div className="wrapper">   
+          {/* {viewCards} */}
           {userComponent}
         </div>
   </div>
