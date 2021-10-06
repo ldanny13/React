@@ -2,6 +2,8 @@
 
 Fetch random users from https://randomuser.me/api/ and displays them with cards
 
+##Before use:
+- npm install (install necessary files and dependencies)
 
 ## Available Scripts
 
