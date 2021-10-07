@@ -87,7 +87,6 @@ class App extends React.Component {
       <button className="fetch-button" onClick={this.fetchUsers}> Get Users</button>
     </div>
         <div className="wrapper">   
-          {/* {viewCards} */}
           {userComponent}
         </div>
   </div>
